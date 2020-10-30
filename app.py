@@ -105,7 +105,7 @@ def create_help_message():
 def return_weather(place):
     words = place.split("-")
     r = data = requests.get(
-        'http://api.openweathermap.org/data/2.5/weather?q=' + words[1] + '&APPID=a8b5aa44442f7e7d49b0fd1a64f1d8a4')
+        'http://api.openweathermap.org/data/2.5/weather?q=' + words[1] + '&APPID=Enter your API ID here')
     if data.json()['cod'] == 200:
         weather = data.json()['weather'][0]['description']
         loc = data.json()['name']
