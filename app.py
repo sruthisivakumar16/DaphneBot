@@ -126,11 +126,6 @@ def return_covid_stat():
     return text
 
 
-
-
-
-
-
 def get_dictionary_response(word):
     """
     Query Webster's Thesaurus API
